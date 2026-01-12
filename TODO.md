@@ -1,0 +1,7 @@
+- PDF CV:
+    - less personal info in the beginning
+    - no signature
+    - different text for consulting, less project focused, more general
+- shorten LinkedIn text to similar length as the website
+- projects:
+    - add weakly supervised / self supervised learning? SimSiam?
