@@ -451,6 +451,9 @@ h2 {
     display: block;
     color: var(--text-tertiary);
     font-size: 0.9em;
+    /* Override mobile phone number styling */
+    text-decoration: none !important;
+    pointer-events: none !important;
 }
 
 .work-location {
