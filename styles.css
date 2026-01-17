@@ -54,6 +54,7 @@ body {
     position: relative;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     line-height: 1.6;
+    text-align: justify;
     color: var(--text-primary);
     background-color: var(--bg-primary);
     transition: background-color 0.3s ease, color 0.3s ease;
@@ -324,7 +325,6 @@ h2 {
     margin-bottom: 12px;
     font-size: 1em;
     line-height: 1.6;
-    text-align: justify;
 }
 
 #about-me a {
@@ -468,7 +468,6 @@ h2 {
     font-size: 0.9em;
     line-height: 1.5;
     margin-bottom: 0;
-    text-align: justify;
 }
 
 /* Publications */
@@ -705,7 +704,6 @@ h2 {
     margin-bottom: 12px;
     transition: color 0.3s ease;
     flex: 1;
-    text-align: justify;
 }
 
 .project-tech {
