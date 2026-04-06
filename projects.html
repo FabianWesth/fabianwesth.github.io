@@ -173,6 +173,74 @@
                 </div>
 
                 <div class="project-card">
+                    <div class="project-category">Biomedical AI • Domain Adaptation</div>
+                    <h3>RADR: Robust Diabetic Retinopathy Classification</h3>
+                    <img src="data/RADR.png" alt="RADR: Robust Diabetic Retinopathy Classification"
+                        class="project-image">
+                    <p>Supervision of Master's thesis for development of a domain-adversarial deep learning framework
+                        for automated diabetic retinopathy severity classification that achieves state-of-the-art
+                        performance across different imaging devices and external cohorts. Published and presented at
+                        Medical Imaging with Deep Learning (MIDL) 2024.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Domain-Adversarial Training</span>
+                        <span class="tech-tag">CNNs</span>
+                        <span class="tech-tag">Retinal Imaging</span>
+                        <span class="tech-tag">PyTorch</span>
+                        <span class="tech-tag">Transfer Learning</span>
+                    </div>
+                    <a href="http://openreview.net/forum?id=2Q3mTp6a6T" target="_blank" rel="noopener noreferrer"
+                        class="project-link">
+                        View Publication
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M15 3h6v6"></path>
+                            <path d="M10 14 21 3"></path>
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-category">Biomedical AI • Research</div>
+                    <h3>Kidney Glomeruli Classification</h3>
+                    <img src="data/glomeruli.png" alt="Kidney Glomeruli Classification" class="project-image">
+                    <p>Developed deep learning pipeline for automated classification of glomeruli from multichannel
+                        fluorescence microscopy images to distinguish healthy vs. diseased kidney tissue and wild-type
+                        vs. knockout mouse genotypes. The system combines computer vision-based feature extraction with
+                        convolutional neural networks for downstream analysis. Integrates Cellpose segmentations and
+                        GradCAM visualizations for model interpretability.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">PyTorch</span>
+                        <span class="tech-tag">Computer Vision</span>
+                        <span class="tech-tag">Deep Learning</span>
+                        <span class="tech-tag">Cellpose</span>
+                        <span class="tech-tag">GradCAM</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-category">Computer Vision • Research</div>
+                    <h3>3D-Segmentation of Multi-Material CT-Scans with Deep Learning</h3>
+                    <img src="data/CT_Segmentation.png"
+                        alt="3D-Segmentation of Multi-Material CT-Scans with Deep Learning" class="project-image">
+                    <p>Developed CNN-based deep learning models for automated 3D segmentation of multi-material objects
+                        in computed tomography scans. Created custom training dataset through physical CT scanning of
+                        multi-material test objects to capture real-world artifacts including beam hardening and cone
+                        beam effects. Aims to overcome limitations of traditional thresholding methods that fail in
+                        artifact-affected regions and enable reliable multi-material segmentation for industrial quality
+                        control applications.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">3D-UNet</span>
+                        <span class="tech-tag">TensorFlow</span>
+                        <span class="tech-tag">Keras</span>
+                        <span class="tech-tag">3D Segmentation</span>
+                        <span class="tech-tag">Medical Imaging</span>
+                        <span class="tech-tag">Computer Vision</span>
+                        <span class="tech-tag">Deep Learning</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
                     <div class="project-category">LLM • Business Automation</div>
                     <h3>TenderFetcher: AI-Powered Tender Analysis System</h3>
                     <img src="data/Tenderfetcher.png" alt="TenderFetcher: AI-Powered Tender Analysis System"
@@ -207,7 +275,7 @@
                     </div>
                 </div> -->
 
-                ⏺ <div class="project-card">
+                <div class="project-card">
                     <div class="project-category">LLM • Telecom Infrastructure</div>
                     <h3>Site Intelligence: Structured Data Extraction from Telecom CAD Drawings</h3>
                     <img src="data/Telco.png"
@@ -217,9 +285,8 @@
                         telecom CAD drawings using multimodal vision
                         LLMs. The extraction pipeline classifies each document to apply document-type-specific
                         processing profiles and prompts, then routes pages to
-                        specialized extraction heads targeting different data domains — addresses, antenna
-                        configurations, mast specifications, competitor presence, and
-                        equipment distances. Pages are specifically preprocessed and adaptively split into overlapping
+                        specialized extraction heads targeting different data domains. Pages are specifically
+                        preprocessed and adaptively split into overlapping
                         patches to preserve fine-grained detail in technical
                         drawings. Each head iteratively refines its output across patches, progressively assembling
                         complete structured records from information scattered
@@ -232,53 +299,6 @@
                         <span class="tech-tag">Structured Extraction</span>
                         <span class="tech-tag">Evaluation Framework</span>
                     </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-category">AI Productivity Tools • Microsoft Office</div>
-                    <h3>VibeSliding: Agentic Multimodal PowerPoint Copilot</h3>
-                    <p>An LLM-powered agentic assistant that transforms presentation creation through natural language
-                        commands and AI-driven automation, directly integrated into Microsoft PowerPoint as an add-in.
-                        The system features a conversational agent written in TypeScript that consumes the PowerPoint
-                        JavaScript API. It is capable of understanding complex slide editing instructions, visual slide
-                        analysis using multimodal vision models, and sophisticated text processing that semantically
-                        preserves text and content formatting.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">React</span>
-                        <span class="tech-tag">TypeScript</span>
-                        <span class="tech-tag">LangChain</span>
-                        <span class="tech-tag">Multimodal LLMs</span>
-                        <span class="tech-tag">Office.js</span>
-                        <span class="tech-tag">FastAPI</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-category">Biomedical AI • Domain Adaptation</div>
-                    <h3>RADR: Robust Diabetic Retinopathy Classification</h3>
-                    <img src="data/RADR.png" alt="RADR: Robust Diabetic Retinopathy Classification"
-                        class="project-image">
-                    <p>Supervision of Master's thesis for development of a domain-adversarial deep learning framework
-                        for automated diabetic retinopathy severity classification that achieves state-of-the-art
-                        performance across different imaging devices and external cohorts. Published and presented at
-                        Medical Imaging with Deep Learning (MIDL) 2024.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Domain-Adversarial Training</span>
-                        <span class="tech-tag">CNNs</span>
-                        <span class="tech-tag">Retinal Imaging</span>
-                        <span class="tech-tag">PyTorch</span>
-                        <span class="tech-tag">Transfer Learning</span>
-                    </div>
-                    <a href="http://openreview.net/forum?id=2Q3mTp6a6T" target="_blank" rel="noopener noreferrer"
-                        class="project-link">
-                        View Publication
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M15 3h6v6"></path>
-                            <path d="M10 14 21 3"></path>
-                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                        </svg>
-                    </a>
                 </div>
 
                 <div class="project-card">
@@ -298,6 +318,25 @@
                         <span class="tech-tag">MariaDB</span>
                         <span class="tech-tag">Geospatial Analysis</span>
                         <span class="tech-tag">Time Series Processing</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-category">AI Productivity Tools • Microsoft Office</div>
+                    <h3>VibeSliding: Agentic Multimodal PowerPoint Copilot</h3>
+                    <p>An LLM-powered agentic assistant that transforms presentation creation through natural language
+                        commands and AI-driven automation, directly integrated into Microsoft PowerPoint as an add-in.
+                        The system features a conversational agent written in TypeScript that consumes the PowerPoint
+                        JavaScript API. It is capable of understanding complex slide editing instructions, visual slide
+                        analysis using multimodal vision models, and sophisticated text processing that semantically
+                        preserves text and content formatting.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">LangChain</span>
+                        <span class="tech-tag">Multimodal LLMs</span>
+                        <span class="tech-tag">Office.js</span>
+                        <span class="tech-tag">FastAPI</span>
                     </div>
                 </div>
 
@@ -351,44 +390,6 @@
                 </div>
 
                 <div class="project-card">
-                    <div class="project-category">Biomedical AI • Research</div>
-                    <h3>Kidney Glomeruli Classification</h3>
-                    <img src="data/glomeruli.png" alt="Kidney Glomeruli Classification" class="project-image">
-                    <p>Developed deep learning pipeline for automated classification of glomeruli from multichannel
-                        fluorescence microscopy images to distinguish healthy vs. diseased kidney tissue and wild-type
-                        vs. knockout mouse genotypes. The system combines computer vision-based feature extraction with
-                        convolutional neural networks for downstream analysis. Integrates Cellpose segmentations and
-                        GradCAM visualizations for model interpretability.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">PyTorch</span>
-                        <span class="tech-tag">Computer Vision</span>
-                        <span class="tech-tag">Deep Learning</span>
-                        <span class="tech-tag">Cellpose</span>
-                        <span class="tech-tag">GradCAM</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-category">AI Data Integration • MCP Server</div>
-                    <h3>Decidalo MCP Server: Semantic Access to Enterprise Data</h3>
-                    <p>Decidalo MCP Server is a comprehensive Model Context Protocol (MCP) server that enables AI
-                        assistants to perform semantic search and retrieval-augmented generation (RAG) over an internal
-                        business data platform. The system automatically ingests data records from Decidalo APIs,
-                        converts them into vector embeddings, and stores them in Qdrant vector databases for efficient
-                        similarity search. Deployed as a containerized service with GCP authentication proxy, it
-                        provides secure and semantic access to structured business intelligence data.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">MCP</span>
-                        <span class="tech-tag">RAG</span>
-                        <span class="tech-tag">Vector Search</span>
-                        <span class="tech-tag">Qdrant</span>
-                        <span class="tech-tag">Azure OpenAI</span>
-                        <span class="tech-tag">FastAPI</span>
-                        <span class="tech-tag">Google Cloud</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
                     <div class="project-category">Space Systems • Master's Thesis</div>
                     <h3>DESTINY⁺ Dust Analyser Data Simulator</h3>
                     <img src="data/destiny_plus.jpg" alt="DESTINY⁺ Dust Analyser Data Simulator - Image credit: JAXA"
@@ -423,28 +424,6 @@
                 </div>
 
                 <div class="project-card">
-                    <div class="project-category">Computer Vision • Research</div>
-                    <h3>3D-Segmentation of Multi-Material CT-Scans with Deep Learning</h3>
-                    <img src="data/CT_Segmentation.png"
-                        alt="3D-Segmentation of Multi-Material CT-Scans with Deep Learning" class="project-image">
-                    <p>Developed CNN-based deep learning models for automated 3D segmentation of multi-material objects
-                        in computed tomography scans. Created custom training dataset through physical CT scanning of
-                        multi-material test objects to capture real-world artifacts including beam hardening and cone
-                        beam effects. Aims to overcome limitations of traditional thresholding methods that fail in
-                        artifact-affected regions and enable reliable multi-material segmentation for industrial quality
-                        control applications.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">3D-UNet</span>
-                        <span class="tech-tag">TensorFlow</span>
-                        <span class="tech-tag">Keras</span>
-                        <span class="tech-tag">3D Segmentation</span>
-                        <span class="tech-tag">Medical Imaging</span>
-                        <span class="tech-tag">Computer Vision</span>
-                        <span class="tech-tag">Deep Learning</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
                     <div class="project-category">Space Systems • Mission Design</div>
                     <h3>Fortuna: A Human and Robotic Exploration Mission to Venus</h3>
                     <img src="data/Fortuna.png" alt="Fortuna: A Human and Robotic Exploration Mission to Venus"
@@ -471,6 +450,26 @@
                             <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
                         </svg>
                     </a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-category">AI Data Integration • MCP Server</div>
+                    <h3>Decidalo MCP Server: Semantic Access to Enterprise Data</h3>
+                    <p>Decidalo MCP Server is a comprehensive Model Context Protocol (MCP) server that enables AI
+                        assistants to perform semantic search and retrieval-augmented generation (RAG) over an internal
+                        business data platform. The system automatically ingests data records from Decidalo APIs,
+                        converts them into vector embeddings, and stores them in Qdrant vector databases for efficient
+                        similarity search. Deployed as a containerized service with GCP authentication proxy, it
+                        provides secure and semantic access to structured business intelligence data.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">MCP</span>
+                        <span class="tech-tag">RAG</span>
+                        <span class="tech-tag">Vector Search</span>
+                        <span class="tech-tag">Qdrant</span>
+                        <span class="tech-tag">Azure OpenAI</span>
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">Google Cloud</span>
+                    </div>
                 </div>
 
             </div>
