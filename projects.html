@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
+
 <body>
     <nav class="navbar">
         <div class="navbar-content">
@@ -16,21 +18,27 @@
                 <a href="projects.html" class="nav-link active">Projects</a>
             </div>
             <button class="theme-toggle" type="button" aria-label="Toggle theme" id="theme-toggle">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="theme-icon sun-icon" aria-hidden="true">
-                <circle cx="12" cy="12" r="4"></circle>
-                <path d="M12 2v2"></path>
-                <path d="M12 20v2"></path>
-                <path d="m4.93 4.93 1.41 1.41"></path>
-                <path d="m17.66 17.66 1.41 1.41"></path>
-                <path d="M2 12h2"></path>
-                <path d="M20 12h2"></path>
-                <path d="m6.34 17.66-1.41 1.41"></path>
-                <path d="m19.07 4.93-1.41 1.41"></path>
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="theme-icon moon-icon" aria-hidden="true">
-                <path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"></path>
-            </svg>
-            <span class="sr-only">Toggle theme</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="theme-icon sun-icon" aria-hidden="true">
+                    <circle cx="12" cy="12" r="4"></circle>
+                    <path d="M12 2v2"></path>
+                    <path d="M12 20v2"></path>
+                    <path d="m4.93 4.93 1.41 1.41"></path>
+                    <path d="m17.66 17.66 1.41 1.41"></path>
+                    <path d="M2 12h2"></path>
+                    <path d="M20 12h2"></path>
+                    <path d="m6.34 17.66-1.41 1.41"></path>
+                    <path d="m19.07 4.93-1.41 1.41"></path>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="theme-icon moon-icon" aria-hidden="true">
+                    <path
+                        d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401">
+                    </path>
+                </svg>
+                <span class="sr-only">Toggle theme</span>
             </button>
         </div>
     </nav>
@@ -44,7 +52,16 @@
                     <div class="project-category">Biomedical AI • Research • Production</div>
                     <h3>PCAI: Prostate Cancer Aggressiveness Index</h3>
                     <img src="data/PCAI.png" alt="PCAI: Prostate Cancer Aggressiveness Index" class="project-image">
-                    <p>Built a production-grade AI system for automated prostate cancer survival and risk assessment from histopathological biopsy images. PCAI is built from a multi-national dataset consisting of 83,864 images from 25,591 patients with up to 20 years of patient follow-up and is the first model to achieve a more accurate risk prediction than the current gold standard of the expert-assigned ISUP grade. The model utilizes attention-based multiple-instance learning, self-attention and domain-adversarial training to generalize to five unseen external cohorts from different imaging devices and clinics. Interpretability is provided by attention heatmaps and an additional cancer detection module. A conformal-prediction-based uncertainty estimation module calculates an additonal confidence score for each risk prediction. PCAI is officially certified by the Swedish healthcare authority (IVO) and actively used in clinical practice.</p>
+                    <p>Built a production-grade AI system for automated prostate cancer survival and risk assessment
+                        from histopathological biopsy images. PCAI is built from a multi-national dataset consisting of
+                        83,864 images from 25,591 patients with up to 20 years of patient follow-up and is the first
+                        model to achieve a more accurate risk prediction than the current gold standard of the
+                        expert-assigned ISUP grade. The model utilizes attention-based multiple-instance learning,
+                        self-attention and domain-adversarial training to generalize to five unseen external cohorts
+                        from different imaging devices and clinics. Interpretability is provided by attention heatmaps
+                        and an additional cancer detection module. A conformal-prediction-based uncertainty estimation
+                        module calculates an additonal confidence score for each risk prediction. PCAI is officially
+                        certified by the Swedish healthcare authority (IVO) and actively used in clinical practice.</p>
                     <div class="project-tech">
                         <span class="tech-tag">PyTorch Lightning</span>
                         <span class="tech-tag">Histopathology</span>
@@ -58,13 +75,27 @@
                         <span class="tech-tag">Conformal Prediction</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://doi.org/10.1016/j.media.2025.103884" target="_blank" rel="noopener noreferrer" class="project-link">
+                        <a href="https://doi.org/10.1016/j.media.2025.103884" target="_blank" rel="noopener noreferrer"
+                            class="project-link">
                             View Publication
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M15 3h6v6"></path>
+                                <path d="M10 14 21 3"></path>
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            </svg>
                         </a>
-                        <a href="https://www.spearpoint.se/en/for-lakare" target="_blank" rel="noopener noreferrer" class="project-link">
+                        <a href="https://www.spearpoint.se/en/for-lakare" target="_blank" rel="noopener noreferrer"
+                            class="project-link">
                             Learn More
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M15 3h6v6"></path>
+                                <path d="M10 14 21 3"></path>
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            </svg>
                         </a>
                     </div>
                 </div>
@@ -72,8 +103,14 @@
                 <div class="project-card">
                     <div class="project-category">Biomedical AI • Research</div>
                     <h3>DeePSC: Automated Diagnosis of Primary Sclerosing Cholangitis</h3>
-                    <img src="data/DeePSC.png" alt="DeePSC: Automated Diagnosis of Primary Sclerosing Cholangitis" class="project-image">
-                    <p>Developed attention-based multi-view CNN model DeePSC for automated diagnosis of Primary Sclerosing Cholangitis from 2D MR cholangiopancreatography images. DeePSC achieves above expert-level accuracy on multiple unseen datasets and generalizes to different imaging devices outside of its training distribution. GradCAM visualizations allow for interpretability of the model's decisions. Published in Radiology: Artificial Intelligence. Awarded with the DGVS "Innovation Award for Digital Gastroenterology".</p>
+                    <img src="data/DeePSC.png" alt="DeePSC: Automated Diagnosis of Primary Sclerosing Cholangitis"
+                        class="project-image">
+                    <p>Developed attention-based multi-view CNN model DeePSC for automated diagnosis of Primary
+                        Sclerosing Cholangitis from 2D MR cholangiopancreatography images. DeePSC achieves above
+                        expert-level accuracy on multiple unseen datasets and generalizes to different imaging devices
+                        outside of its training distribution. GradCAM visualizations allow for interpretability of the
+                        model's decisions. Published in Radiology: Artificial Intelligence. Awarded with the DGVS
+                        "Innovation Award for Digital Gastroenterology".</p>
                     <div class="project-tech">
                         <span class="tech-tag">PyTorch</span>
                         <span class="tech-tag">MONAI</span>
@@ -84,13 +121,27 @@
                         <span class="tech-tag">Computer Vision</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://doi.org/10.1148/ryai.220160" target="_blank" rel="noopener noreferrer" class="project-link">
+                        <a href="https://doi.org/10.1148/ryai.220160" target="_blank" rel="noopener noreferrer"
+                            class="project-link">
                             View Publication
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M15 3h6v6"></path>
+                                <path d="M10 14 21 3"></path>
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            </svg>
                         </a>
-                        <a href="https://www.dgvs.de/aus-dem-fach/forschung-studien/ki-in-der-gastroenterologie/deepsc-ki-gestuetzte-diagnostik-der-primaer-sklerosierenden-cholangitis-anhand-der-2dmagnetresonanz-cholangiopankreatikographie-mrcp/" target="_blank" rel="noopener noreferrer" class="project-link">
+                        <a href="https://www.dgvs.de/aus-dem-fach/forschung-studien/ki-in-der-gastroenterologie/deepsc-ki-gestuetzte-diagnostik-der-primaer-sklerosierenden-cholangitis-anhand-der-2dmagnetresonanz-cholangiopankreatikographie-mrcp/"
+                            target="_blank" rel="noopener noreferrer" class="project-link">
                             Learn More
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M15 3h6v6"></path>
+                                <path d="M10 14 21 3"></path>
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            </svg>
                         </a>
                     </div>
                 </div>
@@ -98,25 +149,40 @@
                 <div class="project-card">
                     <div class="project-category">Biomedical AI • Research Tool</div>
                     <h3>Antibody-AI (ABAI): Agentic Spatial Proteomics Marker Selection</h3>
-                    <img src="data/ABAI.png" alt="Antibody-AI (ABAI): Spatial Proteomics Marker Selection" class="project-image">
-                    <p>AI-powered research tool for identifying optimal protein markers in spatial proteomics experiments. Uses multi-agent LLM workflow to analyze pathway activity, evaluate antibody availability, and rank candidates based on literature evidence and technical feasibility.</p>
+                    <img src="data/ABAI.png" alt="Antibody-AI (ABAI): Spatial Proteomics Marker Selection"
+                        class="project-image">
+                    <p>AI-powered research tool for identifying optimal protein markers in spatial proteomics
+                        experiments. Uses multi-agent LLM workflow to analyze pathway activity, evaluate antibody
+                        availability, and rank candidates based on literature evidence and technical feasibility.</p>
                     <div class="project-tech">
                         <span class="tech-tag">Pydantic AI</span>
                         <span class="tech-tag">FastMCP</span>
                         <span class="tech-tag">Agentic Workflows</span>
                         <span class="tech-tag">Streamlit</span>
                     </div>
-                    <a href="https://github.com/FabianWesth/longevity-agents" target="_blank" rel="noopener noreferrer" class="project-link">
+                    <a href="https://github.com/FabianWesth/longevity-agents" target="_blank" rel="noopener noreferrer"
+                        class="project-link">
                         View on GitHub
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M15 3h6v6"></path>
+                            <path d="M10 14 21 3"></path>
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                        </svg>
                     </a>
                 </div>
 
                 <div class="project-card">
                     <div class="project-category">LLM • Business Automation</div>
                     <h3>TenderFetcher: AI-Powered Tender Analysis System</h3>
-                    <img src="data/Tenderfetcher.png" alt="TenderFetcher: AI-Powered Tender Analysis System" class="project-image">
-                    <p>Production-grade agentic AI system that automates tender analysis and procurement processes for management consulting firms. Leverages web-scraping architecture to extract tenders from multiple European databases, processes them with structured LLM outputs for intelligent categorization, and uses vector embeddings to match opportunities with past project experience. Deploys as a containerized Flask API on Google Cloud Run with SharePoint integration for enterprise workflow automation.</p>
+                    <img src="data/Tenderfetcher.png" alt="TenderFetcher: AI-Powered Tender Analysis System"
+                        class="project-image">
+                    <p>Production-grade agentic AI system that automates tender analysis and procurement processes for
+                        management consulting firms. Leverages web-scraping architecture to extract tenders from
+                        multiple European databases, processes them with structured LLM outputs for intelligent
+                        categorization, and uses vector embeddings to match opportunities with past project experience.
+                        Deploys as a containerized Flask API on Google Cloud Run with SharePoint integration for
+                        enterprise workflow automation.</p>
                     <div class="project-tech">
                         <span class="tech-tag">Python</span>
                         <span class="tech-tag">Azure OpenAI</span>
@@ -127,10 +193,56 @@
                     </div>
                 </div>
 
+                <!-- <div class="project-card">
+                    <div class="project-category">LLM • Pharma & Regulatory Compliance</div>
+                    <h3>AI-Powered Document Redaction for Clinical Trial Submissions</h3>
+                    <p>Document redaction system for pharmaceutical clinical trial submissions that identifies and redacts personally identifiable information (PII) and commercially confidential information (CCI) from regulatory documents. The system ingests the sponsor's internal redaction guidelines and regulatory requirements to make context-aware redaction decisions that vary by jurisdiction, study phase, and document type. PII detection uses established entity recognition services, while CCI detection relies on LLM-based analysis grounded in domain-specific rules and historical redaction precedents. A review interface allows regulatory professionals to validate and refine AI-generated redaction proposals before producing the final redacted document.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Azure OpenAI</span>
+                        <span class="tech-tag">Azure AI Language</span>
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">Human-in-the-Loop</span>
+                    </div>
+                </div> -->
+
+                ⏺ <div class="project-card">
+                    <div class="project-category">LLM • Telecom Infrastructure</div>
+                    <h3>Site Intelligence: Structured Data Extraction from Telecom CAD Drawings</h3>
+                    <img src="data/Telco.png"
+                        alt="Site Intelligence: Structured Data Extraction from Telecom CAD Drawings"
+                        class="project-image">
+                    <p>Production system for automated extraction of structured site data from dense, multi-page German
+                        telecom CAD drawings using multimodal vision
+                        LLMs. The extraction pipeline classifies each document to apply document-type-specific
+                        processing profiles and prompts, then routes pages to
+                        specialized extraction heads targeting different data domains — addresses, antenna
+                        configurations, mast specifications, competitor presence, and
+                        equipment distances. Pages are specifically preprocessed and adaptively split into overlapping
+                        patches to preserve fine-grained detail in technical
+                        drawings. Each head iteratively refines its output across patches, progressively assembling
+                        complete structured records from information scattered
+                        across pages. The system explicitly flags missing or illegible data rather than hallucinate
+                        values in safety-critical infrastructure planning.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Claude API</span>
+                        <span class="tech-tag">Multimodal LLMs</span>
+                        <span class="tech-tag">Pydantic</span>
+                        <span class="tech-tag">Structured Extraction</span>
+                        <span class="tech-tag">Evaluation Framework</span>
+                    </div>
+                </div>
+
                 <div class="project-card">
                     <div class="project-category">AI Productivity Tools • Microsoft Office</div>
                     <h3>VibeSliding: Agentic Multimodal PowerPoint Copilot</h3>
-                    <p>An LLM-powered agentic assistant that transforms presentation creation through natural language commands and AI-driven automation, directly integrated into Microsoft PowerPoint as an add-in. The system features a conversational agent written in TypeScript that consumes the PowerPoint JavaScript API. It is capable of understanding complex slide editing instructions, visual slide analysis using multimodal vision models, and sophisticated text processing that semantically preserves text and content formatting.</p>
+                    <p>An LLM-powered agentic assistant that transforms presentation creation through natural language
+                        commands and AI-driven automation, directly integrated into Microsoft PowerPoint as an add-in.
+                        The system features a conversational agent written in TypeScript that consumes the PowerPoint
+                        JavaScript API. It is capable of understanding complex slide editing instructions, visual slide
+                        analysis using multimodal vision models, and sophisticated text processing that semantically
+                        preserves text and content formatting.</p>
                     <div class="project-tech">
                         <span class="tech-tag">React</span>
                         <span class="tech-tag">TypeScript</span>
@@ -144,8 +256,12 @@
                 <div class="project-card">
                     <div class="project-category">Biomedical AI • Domain Adaptation</div>
                     <h3>RADR: Robust Diabetic Retinopathy Classification</h3>
-                    <img src="data/RADR.png" alt="RADR: Robust Diabetic Retinopathy Classification" class="project-image">
-                    <p>Supervision of Master's thesis for development of a domain-adversarial deep learning framework for automated diabetic retinopathy severity classification that achieves state-of-the-art performance across different imaging devices and external cohorts. Published and presented at Medical Imaging with Deep Learning (MIDL) 2024.</p>
+                    <img src="data/RADR.png" alt="RADR: Robust Diabetic Retinopathy Classification"
+                        class="project-image">
+                    <p>Supervision of Master's thesis for development of a domain-adversarial deep learning framework
+                        for automated diabetic retinopathy severity classification that achieves state-of-the-art
+                        performance across different imaging devices and external cohorts. Published and presented at
+                        Medical Imaging with Deep Learning (MIDL) 2024.</p>
                     <div class="project-tech">
                         <span class="tech-tag">Domain-Adversarial Training</span>
                         <span class="tech-tag">CNNs</span>
@@ -153,16 +269,27 @@
                         <span class="tech-tag">PyTorch</span>
                         <span class="tech-tag">Transfer Learning</span>
                     </div>
-                    <a href="http://openreview.net/forum?id=2Q3mTp6a6T" target="_blank" rel="noopener noreferrer" class="project-link">
+                    <a href="http://openreview.net/forum?id=2Q3mTp6a6T" target="_blank" rel="noopener noreferrer"
+                        class="project-link">
                         View Publication
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M15 3h6v6"></path>
+                            <path d="M10 14 21 3"></path>
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                        </svg>
                     </a>
                 </div>
 
                 <div class="project-card">
                     <div class="project-category">Data Science & Engineering • Full-Stack Analytics Platform</div>
                     <h3>Railway Track Monitoring & Analysis Platform</h3>
-                    <p>Developed a comprehensive full-stack analytics platform for railway infrastructure monitoring, processing real-time sensor data from specialized measurement trains to analyze track roughness, noise emissions, and damage patterns. The system features automated data pipelines, downstream analyses, interactive visualization dashboards, and generates regulatory compliance reports for railway authorities. Built for handling large-scale geospatial time-series data from extensive railway networks.</p>
+                    <p>Developed a comprehensive full-stack analytics platform for railway infrastructure monitoring,
+                        processing real-time sensor data from specialized measurement trains to analyze track roughness,
+                        noise emissions, and damage patterns. The system features automated data pipelines, downstream
+                        analyses, interactive visualization dashboards, and generates regulatory compliance reports for
+                        railway authorities. Built for handling large-scale geospatial time-series data from extensive
+                        railway networks.</p>
                     <div class="project-tech">
                         <span class="tech-tag">Python</span>
                         <span class="tech-tag">Pandas</span>
@@ -174,17 +301,18 @@
                     </div>
                 </div>
 
-                <div class="project-card">                  
+                <div class="project-card">
                     <div class="project-category">Agentic AI • Personal Health • Full-Stack</div>
                     <h3>Personal Health Agent: AI-Powered Health Data Analysis & Coaching</h3>
-                    <img src="data/Health.png" alt="Personal Health Agent: AI-Powered Health Data Analysis & Coaching" class="project-image">
-                    <p>A full-stack AI health assistant that connects to wearable device data, calendar, and  
-                biomedical literature to provide personalized, evidence-based health insights. The system
-                features an agentic LLM backend that autonomously retrieves and cross-references Garmin health
-                 metrics, Google Calendar schedules, and scientific research via Model Context Protocol (MCP)
-                servers. Health data is persistently stored for longitudinal trend analysis, and a day
-                evaluation engine combines deterministic quantitative scoring with LLM-generated qualitative
-                assessments tailored to individual health goals.</p>
+                    <img src="data/Health.png" alt="Personal Health Agent: AI-Powered Health Data Analysis & Coaching"
+                        class="project-image">
+                    <p>A full-stack AI health assistant that connects to wearable device data, calendar, and
+                        biomedical literature to provide personalized, evidence-based health insights. The system
+                        features an agentic LLM backend that autonomously retrieves and cross-references Garmin health
+                        metrics, Google Calendar schedules, and scientific research via Model Context Protocol (MCP)
+                        servers. Health data is persistently stored for longitudinal trend analysis, and a day
+                        evaluation engine combines deterministic quantitative scoring with LLM-generated qualitative
+                        assessments tailored to individual health goals.</p>
                     <div class="project-tech">
                         <span class="tech-tag">Pydantic AI</span>
                         <span class="tech-tag">MCP</span>
@@ -197,11 +325,19 @@
                     </div>
                 </div>
 
-                <div class="project-card">                                                                                                                                                       
-                    <div class="project-category">Agentic AI • Aerospace Engineering</div>                                                                                                       
+                <div class="project-card">
+                    <div class="project-category">Agentic AI • Aerospace Engineering</div>
                     <h3>AI Engineering Assistant for Airframe Stress Analysis</h3>
-                    <img src="data/Airframe.png" alt="AI Engineering Assistant for Airframe Stress Analysis" class="project-image">                                                                                                               
-                    <p>An AI-powered multi-modal engineering assistant that autonomously answers complex structural analysis questions by reasoning over technical reference literature. The system deeply ingests textbooks using vision language models, building a searchable knowledge base of theory, equations, charts, and diagrams. When given an engineering question, the agent searches for relevant material, visually inspects charts and figures using custom image interpretation tools, reads precise data points from graphs, and performs calculations, mirroring the human engineering process. All answers are grounded and referenced in source material for full traceability.</p>
+                    <img src="data/Airframe.png" alt="AI Engineering Assistant for Airframe Stress Analysis"
+                        class="project-image">
+                    <p>An AI-powered multi-modal engineering assistant that autonomously answers complex structural
+                        analysis questions by reasoning over technical reference literature. The system deeply ingests
+                        textbooks using vision language models, building a searchable knowledge base of theory,
+                        equations, charts, and diagrams. When given an engineering question, the agent searches for
+                        relevant material, visually inspects charts and figures using custom image interpretation tools,
+                        reads precise data points from graphs, and performs calculations, mirroring the human
+                        engineering process. All answers are grounded and referenced in source material for full
+                        traceability.</p>
                     <div class="project-tech">
                         <span class="tech-tag">Pydantic AI</span>
                         <span class="tech-tag">Multimodal RAG</span>
@@ -218,7 +354,11 @@
                     <div class="project-category">Biomedical AI • Research</div>
                     <h3>Kidney Glomeruli Classification</h3>
                     <img src="data/glomeruli.png" alt="Kidney Glomeruli Classification" class="project-image">
-                    <p>Developed deep learning pipeline for automated classification of glomeruli from multichannel fluorescence microscopy images to distinguish healthy vs. diseased kidney tissue and wild-type vs. knockout mouse genotypes. The system combines computer vision-based feature extraction with convolutional neural networks for downstream analysis. Integrates Cellpose segmentations and GradCAM visualizations for model interpretability.</p>
+                    <p>Developed deep learning pipeline for automated classification of glomeruli from multichannel
+                        fluorescence microscopy images to distinguish healthy vs. diseased kidney tissue and wild-type
+                        vs. knockout mouse genotypes. The system combines computer vision-based feature extraction with
+                        convolutional neural networks for downstream analysis. Integrates Cellpose segmentations and
+                        GradCAM visualizations for model interpretability.</p>
                     <div class="project-tech">
                         <span class="tech-tag">PyTorch</span>
                         <span class="tech-tag">Computer Vision</span>
@@ -231,7 +371,12 @@
                 <div class="project-card">
                     <div class="project-category">AI Data Integration • MCP Server</div>
                     <h3>Decidalo MCP Server: Semantic Access to Enterprise Data</h3>
-                    <p>Decidalo MCP Server is a comprehensive Model Context Protocol (MCP) server that enables AI assistants to perform semantic search and retrieval-augmented generation (RAG) over an internal business data platform. The system automatically ingests data records from Decidalo APIs, converts them into vector embeddings, and stores them in Qdrant vector databases for efficient similarity search. Deployed as a containerized service with GCP authentication proxy, it provides secure and semantic access to structured business intelligence data.</p>
+                    <p>Decidalo MCP Server is a comprehensive Model Context Protocol (MCP) server that enables AI
+                        assistants to perform semantic search and retrieval-augmented generation (RAG) over an internal
+                        business data platform. The system automatically ingests data records from Decidalo APIs,
+                        converts them into vector embeddings, and stores them in Qdrant vector databases for efficient
+                        similarity search. Deployed as a containerized service with GCP authentication proxy, it
+                        provides secure and semantic access to structured business intelligence data.</p>
                     <div class="project-tech">
                         <span class="tech-tag">MCP</span>
                         <span class="tech-tag">RAG</span>
@@ -246,8 +391,15 @@
                 <div class="project-card">
                     <div class="project-category">Space Systems • Master's Thesis</div>
                     <h3>DESTINY⁺ Dust Analyser Data Simulator</h3>
-                    <img src="data/destiny_plus.jpg" alt="DESTINY⁺ Dust Analyser Data Simulator - Image credit: JAXA" class="project-image">
-                    <p>My Master's thesis on developing an FPGA-based simulator for the DESTINY⁺ Dust Analyser sensor data. Built in VHDL on Xilinx Zynq-7020 SoC with custom trigger logic for detecting interstellar dust particle impacts. Enables testing of space mission instrumentation without requiring complex dust accelerator setups. DESTINY⁺ is a JAXA technology demonstration mission to asteroid Phaethon, exploring cosmic dust and demonstrating low-cost deep space exploration technologies.<br><small style="color: var(--text-tertiary); font-size: 0.8em;">Image credit: JAXA</small></p>
+                    <img src="data/destiny_plus.jpg" alt="DESTINY⁺ Dust Analyser Data Simulator - Image credit: JAXA"
+                        class="project-image">
+                    <p>My Master's thesis on developing an FPGA-based simulator for the DESTINY⁺ Dust Analyser sensor
+                        data. Built in VHDL on Xilinx Zynq-7020 SoC with custom trigger logic for detecting interstellar
+                        dust particle impacts. Enables testing of space mission instrumentation without requiring
+                        complex dust accelerator setups. DESTINY⁺ is a JAXA technology demonstration mission to asteroid
+                        Phaethon, exploring cosmic dust and demonstrating low-cost deep space exploration
+                        technologies.<br><small style="color: var(--text-tertiary); font-size: 0.8em;">Image credit:
+                            JAXA</small></p>
                     <div class="project-tech">
                         <span class="tech-tag">FPGA</span>
                         <span class="tech-tag">Xilinx Zynq</span>
@@ -256,9 +408,16 @@
                         <span class="tech-tag">C++</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://www.isas.jaxa.jp/en/missions/spacecraft/developing/destiny_plus.html" target="_blank" rel="noopener noreferrer" class="project-link">
+                        <a href="https://www.isas.jaxa.jp/en/missions/spacecraft/developing/destiny_plus.html"
+                            target="_blank" rel="noopener noreferrer" class="project-link">
                             Learn More
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M15 3h6v6"></path>
+                                <path d="M10 14 21 3"></path>
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            </svg>
                         </a>
                     </div>
                 </div>
@@ -266,8 +425,14 @@
                 <div class="project-card">
                     <div class="project-category">Computer Vision • Research</div>
                     <h3>3D-Segmentation of Multi-Material CT-Scans with Deep Learning</h3>
-                    <img src="data/CT_Segmentation.png" alt="3D-Segmentation of Multi-Material CT-Scans with Deep Learning" class="project-image">
-                    <p>Developed CNN-based deep learning models for automated 3D segmentation of multi-material objects in computed tomography scans. Created custom training dataset through physical CT scanning of multi-material test objects to capture real-world artifacts including beam hardening and cone beam effects. Aims to overcome limitations of traditional thresholding methods that fail in artifact-affected regions and enable reliable multi-material segmentation for industrial quality control applications.</p>
+                    <img src="data/CT_Segmentation.png"
+                        alt="3D-Segmentation of Multi-Material CT-Scans with Deep Learning" class="project-image">
+                    <p>Developed CNN-based deep learning models for automated 3D segmentation of multi-material objects
+                        in computed tomography scans. Created custom training dataset through physical CT scanning of
+                        multi-material test objects to capture real-world artifacts including beam hardening and cone
+                        beam effects. Aims to overcome limitations of traditional thresholding methods that fail in
+                        artifact-affected regions and enable reliable multi-material segmentation for industrial quality
+                        control applications.</p>
                     <div class="project-tech">
                         <span class="tech-tag">3D-UNet</span>
                         <span class="tech-tag">TensorFlow</span>
@@ -282,8 +447,13 @@
                 <div class="project-card">
                     <div class="project-category">Space Systems • Mission Design</div>
                     <h3>Fortuna: A Human and Robotic Exploration Mission to Venus</h3>
-                    <img src="data/Fortuna.png" alt="Fortuna: A Human and Robotic Exploration Mission to Venus" class="project-image">
-                    <p>Conceptual design of a long-term crewed mission to Venus as part of the Space Station Design Workshop. Led the electrical power system design for a multidisciplinary team project exploring human survival in Venus's harsh atmosphere. Proposed innovative solutions for balloon-based habitation at 70km altitude, surface robotic exploration, and in-situ resource utilization (ISRU) technologies.</p>
+                    <img src="data/Fortuna.png" alt="Fortuna: A Human and Robotic Exploration Mission to Venus"
+                        class="project-image">
+                    <p>Conceptual design of a long-term crewed mission to Venus as part of the Space Station Design
+                        Workshop. Led the electrical power system design for a multidisciplinary team project exploring
+                        human survival in Venus's harsh atmosphere. Proposed innovative solutions for balloon-based
+                        habitation at 70km altitude, surface robotic exploration, and in-situ resource utilization
+                        (ISRU) technologies.</p>
                     <div class="project-tech">
                         <span class="tech-tag">Systems Engineering</span>
                         <span class="tech-tag">Power Systems</span>
@@ -291,9 +461,15 @@
                         <span class="tech-tag">Concurrent Engineering</span>
                         <span class="tech-tag">Multidisciplinary Design</span>
                     </div>
-                    <a href="https://ttu-ir.tdl.org/items/d019f683-ab99-4782-93c3-c3ccd12c17ea" target="_blank" rel="noopener noreferrer" class="project-link">
+                    <a href="https://ttu-ir.tdl.org/items/d019f683-ab99-4782-93c3-c3ccd12c17ea" target="_blank"
+                        rel="noopener noreferrer" class="project-link">
                         View Publication
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M15 3h6v6"></path>
+                            <path d="M10 14 21 3"></path>
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                        </svg>
                     </a>
                 </div>
 
@@ -305,7 +481,7 @@
         lucide.createIcons();
 
         // Theme toggle functionality
-        (function() {
+        (function () {
             const themeToggle = document.getElementById('theme-toggle');
             const html = document.documentElement;
 
@@ -344,7 +520,7 @@
         })();
 
         // Image lightbox functionality
-        (function() {
+        (function () {
             // Create lightbox elements
             const lightbox = document.createElement('div');
             lightbox.className = 'lightbox';
@@ -378,7 +554,7 @@
             // Add click handlers to project images
             document.querySelectorAll('.project-image').forEach(img => {
                 img.style.cursor = 'pointer';
-                img.addEventListener('click', function() {
+                img.addEventListener('click', function () {
                     openLightbox(this.src, this.alt);
                 });
             });
@@ -388,7 +564,7 @@
             lightboxClose.addEventListener('click', closeLightbox);
 
             // Close lightbox with ESC key
-            document.addEventListener('keydown', function(e) {
+            document.addEventListener('keydown', function (e) {
                 if (e.key === 'Escape' && lightbox.classList.contains('active')) {
                     closeLightbox();
                 }
@@ -396,4 +572,5 @@
         })();
     </script>
 </body>
+
 </html>
