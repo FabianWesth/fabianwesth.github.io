@@ -23,23 +23,23 @@ import destiny from './destiny.js';
 import fortuna from './fortuna.js';
 
 export const projects = [
-    // Mature — live products and completed research
+    // Mature — live products and completed research (ordered by importance / coolness)
     pcai,
     adhere,
+    deepsc,
     siteIntelligence,
     railway,
     tenderfetcher,
-    vibesliding,
-    deepsc,
     radr,
-    glomeruli,
-    ctSegmentation,
     destiny,
+    ctSegmentation,
+    glomeruli,
+    vibesliding,
     fortuna,
     // Prototype — working proofs-of-concept
-    abai,
-    airframe,
-    mcpServer,
-    healthAgent,
     redaction,
+    airframe,
+    abai,
+    healthAgent,
+    mcpServer,
 ];
