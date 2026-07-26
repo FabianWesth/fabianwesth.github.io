@@ -23,23 +23,23 @@ import destiny from './destiny.js';
 import fortuna from './fortuna.js';
 
 export const projects = [
-    // Mature — live products and completed research (ordered by importance / coolness)
+    // Ordered by overall impact / coolness (not strictly by maturity;
+    // each card still shows its own Mature/Prototype badge).
     pcai,
     adhere,
     deepsc,
     siteIntelligence,
+    redaction,
     railway,
+    abai,
     tenderfetcher,
     radr,
+    airframe,
     destiny,
     ctSegmentation,
-    glomeruli,
     vibesliding,
-    fortuna,
-    // Prototype — working proofs-of-concept
-    redaction,
-    airframe,
-    abai,
+    glomeruli,
     healthAgent,
     mcpServer,
+    fortuna,
 ];
