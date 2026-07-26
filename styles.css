@@ -985,3 +985,108 @@ h2 {
         font-size: 20px;
     }
 }
+
+/* Project Filters */
+.project-filters {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 12px 16px;
+    align-items: center;
+    margin-bottom: 28px;
+    padding-bottom: 22px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.filter-group {
+    display: contents;
+}
+
+.filter-label {
+    font-size: 0.7em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-tertiary);
+    align-self: center;
+    white-space: nowrap;
+}
+
+.filter-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.filter-chip {
+    font-size: 0.78em;
+    color: var(--text-secondary);
+    background-color: var(--bg-secondary);
+    padding: 5px 13px;
+    border-radius: 999px;
+    border: 1px solid var(--border-color);
+    cursor: pointer;
+    font-family: inherit;
+    line-height: 1.35;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.filter-chip:hover {
+    border-color: var(--text-tertiary);
+    color: var(--text-primary);
+}
+
+.filter-chip.active {
+    background-color: var(--button-bg);
+    color: #fff;
+    border-color: var(--button-bg);
+}
+
+.filter-chip:focus-visible {
+    outline: 2px solid var(--text-primary);
+    outline-offset: 2px;
+}
+
+.filter-actions {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 14px;
+    min-height: 1em;
+}
+
+.filter-count {
+    font-size: 0.8em;
+    color: var(--text-tertiary);
+}
+
+.filter-clear {
+    font-size: 0.8em;
+    color: var(--link-color);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    padding: 2px 4px;
+    text-decoration: underline;
+}
+
+.filter-clear:hover {
+    opacity: 0.8;
+}
+
+@media (max-width: 600px) {
+    .project-filters {
+        grid-template-columns: 1fr;
+        gap: 6px 0;
+    }
+
+    .filter-label {
+        margin-top: 8px;
+    }
+
+    .filter-actions {
+        justify-content: flex-start;
+        margin-top: 8px;
+    }
+}

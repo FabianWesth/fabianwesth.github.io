@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects - Fabian Westhaeusser</title>
-    <link rel="icon" type="image/svg+xml" href="data/icon.svg">
+    <link rel="icon" type="image/svg+xml" href="assets/icon.svg">
     <link rel="stylesheet" href="styles.css">
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
@@ -47,447 +47,27 @@
         <section id="projects">
             <h2>Selected Projects</h2>
 
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-category">Biomedical AI • Research • Production</div>
-                    <h3>PCAI: Prostate Cancer Aggressiveness Index</h3>
-                    <img src="data/PCAI.png" alt="PCAI: Prostate Cancer Aggressiveness Index" class="project-image">
-                    <p>Built a production-grade AI system for automated prostate cancer survival and risk assessment
-                        from histopathological biopsy images. PCAI is built from a multi-national dataset consisting of
-                        83,864 images from 25,591 patients with up to 20 years of patient follow-up and is the first
-                        model to achieve a more accurate risk prediction than the current gold standard of the
-                        expert-assigned ISUP grade. The model utilizes attention-based multiple-instance learning,
-                        self-attention and domain-adversarial training to generalize to five unseen external cohorts
-                        from different imaging devices and clinics. Interpretability is provided by attention heatmaps
-                        and an additional cancer detection module. A conformal-prediction-based uncertainty estimation
-                        module calculates an additonal confidence score for each risk prediction. PCAI is officially
-                        certified by the Swedish healthcare authority (IVO) and actively used in clinical practice.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">PyTorch Lightning</span>
-                        <span class="tech-tag">Histopathology</span>
-                        <span class="tech-tag">Clinical AI</span>
-                        <span class="tech-tag">Uncertainty Estimation</span>
-                        <span class="tech-tag">Interpretability</span>
-                        <span class="tech-tag">Multiple-Instance Learning</span>
-                        <span class="tech-tag">Medical Imaging</span>
-                        <span class="tech-tag">Domain-Adversarial Training</span>
-                        <span class="tech-tag">Self-Attention</span>
-                        <span class="tech-tag">Conformal Prediction</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://doi.org/10.1016/j.media.2025.103884" target="_blank" rel="noopener noreferrer"
-                            class="project-link">
-                            View Publication
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <path d="M15 3h6v6"></path>
-                                <path d="M10 14 21 3"></path>
-                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                            </svg>
-                        </a>
-                        <a href="https://www.spearpoint.se/en/for-lakare" target="_blank" rel="noopener noreferrer"
-                            class="project-link">
-                            Learn More
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <path d="M15 3h6v6"></path>
-                                <path d="M10 14 21 3"></path>
-                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                            </svg>
-                        </a>
-                    </div>
+            <div class="project-filters" id="project-filters">
+                <div class="filter-group" data-dimension="field">
+                    <span class="filter-label">Field</span>
+                    <div class="filter-chips"></div>
                 </div>
-
-                <div class="project-card">
-                    <div class="project-category">Biomedical AI • Research</div>
-                    <h3>DeePSC: Automated Diagnosis of Primary Sclerosing Cholangitis</h3>
-                    <img src="data/DeePSC.png" alt="DeePSC: Automated Diagnosis of Primary Sclerosing Cholangitis"
-                        class="project-image">
-                    <p>Developed attention-based multi-view CNN model DeePSC for automated diagnosis of Primary
-                        Sclerosing Cholangitis (PSC) from 2D MR cholangiopancreatography images. DeePSC achieves SOTA
-                        accuracy on multiple unseen datasets and generalizes to different imaging devices
-                        outside of its training distribution. It was further benchmarked on two unseen datasets against
-                        four highly trained radiologists and outperformed them in both cases. GradCAM visualizations
-                        allow for interpretability of the
-                        model's decisions. Published in Radiology: Artificial Intelligence. Awarded with the DGVS
-                        "Innovation Award for Digital Gastroenterology".</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">PyTorch</span>
-                        <span class="tech-tag">MONAI</span>
-                        <span class="tech-tag">GradCAM</span>
-                        <span class="tech-tag">Domain Adaptation</span>
-                        <span class="tech-tag">Medical Imaging</span>
-                        <span class="tech-tag">Deep Learning</span>
-                        <span class="tech-tag">Computer Vision</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://doi.org/10.1148/ryai.220160" target="_blank" rel="noopener noreferrer"
-                            class="project-link">
-                            View Publication
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <path d="M15 3h6v6"></path>
-                                <path d="M10 14 21 3"></path>
-                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                            </svg>
-                        </a>
-                        <a href="https://www.dgvs.de/aus-dem-fach/forschung-studien/ki-in-der-gastroenterologie/deepsc-ki-gestuetzte-diagnostik-der-primaer-sklerosierenden-cholangitis-anhand-der-2dmagnetresonanz-cholangiopankreatikographie-mrcp/"
-                            target="_blank" rel="noopener noreferrer" class="project-link">
-                            Learn More
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <path d="M15 3h6v6"></path>
-                                <path d="M10 14 21 3"></path>
-                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                            </svg>
-                        </a>
-                    </div>
+                <div class="filter-group" data-dimension="type">
+                    <span class="filter-label">Type</span>
+                    <div class="filter-chips"></div>
                 </div>
-
-                <div class="project-card">
-                    <div class="project-category">Biomedical AI • Research Tool</div>
-                    <h3>Antibody-AI (ABAI): Agentic Spatial Proteomics Marker Selection</h3>
-                    <img src="data/ABAI.png" alt="Antibody-AI (ABAI): Spatial Proteomics Marker Selection"
-                        class="project-image">
-                    <p>AI-powered research tool for identifying optimal protein markers in spatial proteomics
-                        experiments. Uses multi-agent LLM workflow to analyze pathway activity, evaluate antibody
-                        availability, and rank candidates based on literature evidence and technical feasibility.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Pydantic AI</span>
-                        <span class="tech-tag">FastMCP</span>
-                        <span class="tech-tag">Agentic Workflows</span>
-                        <span class="tech-tag">Streamlit</span>
-                    </div>
-                    <a href="https://github.com/FabianWesth/longevity-agents" target="_blank" rel="noopener noreferrer"
-                        class="project-link">
-                        View on GitHub
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M15 3h6v6"></path>
-                            <path d="M10 14 21 3"></path>
-                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                        </svg>
-                    </a>
+                <div class="filter-group" data-dimension="status">
+                    <span class="filter-label">Status</span>
+                    <div class="filter-chips"></div>
                 </div>
-
-                <div class="project-card">
-                    <div class="project-category">Biomedical AI • Domain Adaptation</div>
-                    <h3>RADR: Robust Diabetic Retinopathy Classification</h3>
-                    <img src="data/RADR.png" alt="RADR: Robust Diabetic Retinopathy Classification"
-                        class="project-image">
-                    <p>Supervision of Master's thesis for development of a domain-adversarial deep learning framework
-                        for automated diabetic retinopathy severity classification that achieves state-of-the-art
-                        performance across different imaging devices and external cohorts. Published and presented at
-                        Medical Imaging with Deep Learning (MIDL) 2024.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Domain-Adversarial Training</span>
-                        <span class="tech-tag">CNNs</span>
-                        <span class="tech-tag">Retinal Imaging</span>
-                        <span class="tech-tag">PyTorch</span>
-                        <span class="tech-tag">Transfer Learning</span>
-                    </div>
-                    <a href="http://openreview.net/forum?id=2Q3mTp6a6T" target="_blank" rel="noopener noreferrer"
-                        class="project-link">
-                        View Publication
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M15 3h6v6"></path>
-                            <path d="M10 14 21 3"></path>
-                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                        </svg>
-                    </a>
+                <div class="filter-actions">
+                    <span class="filter-count" id="filter-count"></span>
+                    <button class="filter-clear" id="filter-clear" type="button">Clear all</button>
                 </div>
+            </div>
 
-                <div class="project-card">
-                    <div class="project-category">Biomedical AI • Research</div>
-                    <h3>Kidney Glomeruli Classification</h3>
-                    <img src="data/glomeruli.png" alt="Kidney Glomeruli Classification" class="project-image">
-                    <p>Developed deep learning pipeline for automated classification of glomeruli from multichannel
-                        fluorescence microscopy images to distinguish healthy vs. diseased kidney tissue and wild-type
-                        vs. knockout mouse genotypes. The system combines computer vision-based feature extraction with
-                        convolutional neural networks for downstream analysis. Integrates Cellpose segmentations and
-                        GradCAM visualizations for model interpretability.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">PyTorch</span>
-                        <span class="tech-tag">Computer Vision</span>
-                        <span class="tech-tag">Deep Learning</span>
-                        <span class="tech-tag">Cellpose</span>
-                        <span class="tech-tag">GradCAM</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-category">Computer Vision • Research</div>
-                    <h3>3D-Segmentation of Multi-Material CT-Scans with Deep Learning</h3>
-                    <img src="data/CT_Segmentation.png"
-                        alt="3D-Segmentation of Multi-Material CT-Scans with Deep Learning" class="project-image">
-                    <p>Developed CNN-based deep learning models for automated 3D segmentation of multi-material objects
-                        in computed tomography scans. Created custom training dataset through physical CT scanning of
-                        multi-material test objects to capture real-world artifacts including beam hardening and cone
-                        beam effects. Aims to overcome limitations of traditional thresholding methods that fail in
-                        artifact-affected regions and enable reliable multi-material segmentation for industrial quality
-                        control applications.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">3D-UNet</span>
-                        <span class="tech-tag">TensorFlow</span>
-                        <span class="tech-tag">Keras</span>
-                        <span class="tech-tag">3D Segmentation</span>
-                        <span class="tech-tag">Medical Imaging</span>
-                        <span class="tech-tag">Computer Vision</span>
-                        <span class="tech-tag">Deep Learning</span>
-                    </div>
-                </div>
-
-
-                <div class="project-card">
-                    <div class="project-category">LLM • Telecom Infrastructure</div>
-                    <h3>Site Intelligence: Structured Data Extraction from Telecom CAD Drawings</h3>
-                    <img src="data/Telco.jpg"
-                        alt="Site Intelligence: Structured Data Extraction from Telecom CAD Drawings"
-                        class="project-image">
-                    <p>Production system for automated extraction of structured site data from dense, multi-page German
-                        telecom CAD drawings in A0 format using multimodal vision
-                        LLMs. The extraction pipeline classifies each document to apply document-type-specific
-                        processing profiles and prompts, then routes pages to
-                        specialized extraction heads targeting different data domains (tables, drawings, metadata,
-                        etc.). Pages are specifically preprocessed and adaptively split into overlapping
-                        patches to preserve fine-grained detail and account for effective internal VLM resolution. Each
-                        head iteratively refines its output across patches, progressively assembling
-                        complete structured records from information scattered
-                        across pages. Tracing powered by Arize Phoenix. Consistently achieves >95% extraction accuracy
-                        across hundreds of data fields. Deploys in client-site GCP to process tens of thousands of
-                        documents at scale.<br><small style="color: var(--text-tertiary); font-size: 0.8em;">Photo by <a
-                                href="https://unsplash.com/de/@cesium235" target="_blank"
-                                rel="noopener noreferrer">Christopher</a> on <a href="https://unsplash.com"
-                                target="_blank" rel="noopener noreferrer">Unsplash</a></small></p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Claude API</span>
-                        <span class="tech-tag">Multimodal LLMs</span>
-                        <span class="tech-tag">Structured Extraction</span>
-                        <span class="tech-tag">Arize Phoenix</span>
-                        <span class="tech-tag">Evaluation Framework</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-category">Data Science & Engineering • Full-Stack Analytics Platform</div>
-                    <h3>Railway Track Monitoring & Analysis Platform</h3>
-                    <img src="data/Railway.jpg" alt="Railway Track Monitoring & Analysis Platform"
-                        class="project-image">
-                    <p>Developed a full-stack analytics platform for a novel railway monitoring system, processing
-                        real-time geospatial time-series data from measurement trains. Designed downstream statistical
-                        models and predictive analytics to identify early-stage track roughness, noise emissions, and
-                        degradation patterns across extensive railway networks. Developed automated data quality
-                        guardrails and calibration workflows to handle variance across different measurement runs.
-                        Achieved official system certification by the German Federal Railway Authority (EBA) after
-                        demonstrating that the platform’s data analysis met strict regulatory precision thresholds.
-                        <br><small style="color: var(--text-tertiary); font-size: 0.8em;">Photo by
-                            <a href="https://unsplash.com/de/@jplenio" target="_blank"
-                                rel="noopener noreferrer">Johannes Plenio</a> on <a href="https://unsplash.com"
-                                target="_blank" rel="noopener noreferrer">Unsplash</a></small>
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Pandas</span>
-                        <span class="tech-tag">FastAPI</span>
-                        <span class="tech-tag">Streamlit</span>
-                        <span class="tech-tag">MariaDB</span>
-                        <span class="tech-tag">Geospatial Analysis</span>
-                        <span class="tech-tag">Time Series Processing</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-category">LLM • Business Automation</div>
-                    <h3>TenderFetcher: AI-Powered Tender Analysis System</h3>
-                    <img src="data/Tenderfetcher.png" alt="TenderFetcher: AI-Powered Tender Analysis System"
-                        class="project-image">
-                    <p>Production-grade agentic AI system that automates tender analysis and procurement processes for
-                        management consulting firms. Leverages web-scraping architecture to extract tenders from
-                        multiple European databases, processes them with structured LLM outputs for intelligent
-                        categorization, and uses vector embeddings to match opportunities with past project experience.
-                        Deploys as a containerized Flask API on Google Cloud Run with SharePoint integration for
-                        enterprise workflow automation.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Azure OpenAI</span>
-                        <span class="tech-tag">Selenium</span>
-                        <span class="tech-tag">Qdrant</span>
-                        <span class="tech-tag">Docker</span>
-                        <span class="tech-tag">Google Cloud</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-category">Agentic AI • Aerospace Engineering</div>
-                    <h3>AI Engineering Assistant for Airframe Stress Analysis</h3>
-                    <img src="data/Airframe.png" alt="AI Engineering Assistant for Airframe Stress Analysis"
-                        class="project-image">
-                    <p>An AI-powered multi-modal engineering assistant that autonomously answers complex structural
-                        analysis questions by reasoning over technical reference literature. The system deeply ingests
-                        textbooks using vision language models, building a searchable knowledge base of theory,
-                        equations, charts, and diagrams. When given an engineering question, the agent searches for
-                        relevant material, visually inspects charts and figures using custom image interpretation tools,
-                        reads precise data points from graphs, and performs calculations, mirroring the human
-                        engineering process. All answers are grounded and referenced in source material for full
-                        traceability.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Pydantic AI</span>
-                        <span class="tech-tag">Multimodal RAG</span>
-                        <span class="tech-tag">Vision Language Models</span>
-                        <span class="tech-tag">Agentic Workflows</span>
-                        <span class="tech-tag">Graph Data Extraction</span>
-                        <span class="tech-tag">FastAPI</span>
-                        <span class="tech-tag">ChromaDB</span>
-                        <span class="tech-tag">Streamlit</span>
-                    </div>
-                </div>
-
-                <!-- <div class="project-card">
-                    <div class="project-category">LLM • Pharma & Regulatory Compliance</div>
-                    <h3>AI-Powered Document Redaction for Clinical Trial Submissions</h3>
-                    <p>Document redaction system for pharmaceutical clinical trial submissions that identifies and redacts personally identifiable information (PII) and commercially confidential information (CCI) from regulatory documents. The system ingests the sponsor's internal redaction guidelines and regulatory requirements to make context-aware redaction decisions that vary by jurisdiction, study phase, and document type. PII detection uses established entity recognition services, while CCI detection relies on LLM-based analysis grounded in domain-specific rules and historical redaction precedents. A review interface allows regulatory professionals to validate and refine AI-generated redaction proposals before producing the final redacted document.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Azure OpenAI</span>
-                        <span class="tech-tag">Azure AI Language</span>
-                        <span class="tech-tag">FastAPI</span>
-                        <span class="tech-tag">React</span>
-                        <span class="tech-tag">Docker</span>
-                        <span class="tech-tag">Human-in-the-Loop</span>
-                    </div>
-                </div> -->
-
-                <div class="project-card">
-                    <div class="project-category">Agentic AI • Microsoft Powerpoint</div>
-                    <h3>VibeSliding: Agentic Multimodal PowerPoint Copilot</h3>
-                    <img src="data/Vibeslider.png" alt="VibeSliding: Agentic Multimodal PowerPoint Copilot"
-                        class="project-image">
-                    <p>An LLM-powered agentic assistant that transforms presentation creation through natural language
-                        commands and AI-driven automation, directly integrated into Microsoft PowerPoint as an add-in.
-                        The system features a conversational agent written in TypeScript that consumes the PowerPoint
-                        JavaScript API. It is capable of understanding complex slide editing instructions, visual slide
-                        analysis using multimodal vision models, and sophisticated text processing that semantically
-                        preserves text and content formatting.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">React</span>
-                        <span class="tech-tag">TypeScript</span>
-                        <span class="tech-tag">LangChain</span>
-                        <span class="tech-tag">Multimodal LLMs</span>
-                        <span class="tech-tag">Office.js</span>
-                        <span class="tech-tag">FastAPI</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-category">Agentic AI • Personal Health</div>
-                    <h3>Personal Health Agent: AI-Powered Health Data Analysis & Coaching</h3>
-                    <img src="data/Health.png" alt="Personal Health Agent: AI-Powered Health Data Analysis & Coaching"
-                        class="project-image">
-                    <p>A full-stack AI health assistant that connects to wearable device data, calendar, and
-                        biomedical literature to provide personalized, evidence-based health insights. The system
-                        features an agentic LLM backend that autonomously retrieves and cross-references Garmin health
-                        metrics, Google Calendar schedules, and scientific research via Model Context Protocol (MCP)
-                        servers. Health data is persistently stored for longitudinal trend analysis, and a day
-                        evaluation engine combines deterministic quantitative scoring with LLM-generated qualitative
-                        assessments tailored to individual health goals.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Pydantic AI</span>
-                        <span class="tech-tag">MCP</span>
-                        <span class="tech-tag">FastAPI</span>
-                        <span class="tech-tag">React</span>
-                        <span class="tech-tag">TypeScript</span>
-                        <span class="tech-tag">Azure OpenAI</span>
-                        <span class="tech-tag">Tailwind CSS</span>
-                        <span class="tech-tag">Agentic Workflows</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-category">Space Systems • Master's Thesis</div>
-                    <h3>DESTINY⁺ Dust Analyser Data Simulator</h3>
-                    <img src="data/destiny_plus.jpg" alt="DESTINY⁺ Dust Analyser Data Simulator - Image credit: JAXA"
-                        class="project-image">
-                    <p>My Master's thesis on developing an FPGA-based simulator for the DESTINY⁺ Dust Analyser sensor
-                        data. Built in VHDL on Xilinx Zynq-7020 SoC with custom trigger logic for detecting interstellar
-                        dust particle impacts. Enables testing of space mission instrumentation without requiring
-                        complex dust accelerator setups. DESTINY⁺ is a JAXA technology demonstration mission to asteroid
-                        Phaethon, exploring cosmic dust and demonstrating low-cost deep space exploration
-                        technologies.<br><small style="color: var(--text-tertiary); font-size: 0.8em;">Image credit:
-                            JAXA</small></p>
-                    <div class="project-tech">
-                        <span class="tech-tag">FPGA</span>
-                        <span class="tech-tag">Xilinx Zynq</span>
-                        <span class="tech-tag">VHDL</span>
-                        <span class="tech-tag">Embedded Linux</span>
-                        <span class="tech-tag">C++</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://www.isas.jaxa.jp/en/missions/spacecraft/developing/destiny_plus.html"
-                            target="_blank" rel="noopener noreferrer" class="project-link">
-                            Learn More
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <path d="M15 3h6v6"></path>
-                                <path d="M10 14 21 3"></path>
-                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-category">Space Systems • Mission Design</div>
-                    <h3>Fortuna: A Human and Robotic Exploration Mission to Venus</h3>
-                    <img src="data/Fortuna.png" alt="Fortuna: A Human and Robotic Exploration Mission to Venus"
-                        class="project-image">
-                    <p>Conceptual design of a long-term crewed mission to Venus as part of the Space Station Design
-                        Workshop. Led the electrical power system design for a multidisciplinary team project exploring
-                        human survival in Venus's harsh atmosphere. Proposed innovative solutions for balloon-based
-                        habitation at 70km altitude, surface robotic exploration, and in-situ resource utilization
-                        (ISRU) technologies.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Systems Engineering</span>
-                        <span class="tech-tag">Power Systems</span>
-                        <span class="tech-tag">Space Mission Design</span>
-                        <span class="tech-tag">Concurrent Engineering</span>
-                        <span class="tech-tag">Multidisciplinary Design</span>
-                    </div>
-                    <a href="https://ttu-ir.tdl.org/items/d019f683-ab99-4782-93c3-c3ccd12c17ea" target="_blank"
-                        rel="noopener noreferrer" class="project-link">
-                        View Publication
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M15 3h6v6"></path>
-                            <path d="M10 14 21 3"></path>
-                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                        </svg>
-                    </a>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-category">AI Data Integration • MCP Server</div>
-                    <h3>MCP Server for Semantic Enterprise Data Access</h3>
-                    <p>A Model Context Protocol (MCP) server that lets AI assistants perform semantic search and
-                        retrieval-augmented generation (RAG) over a structured business data platform. The system
-                        ingests records through the platform's APIs, converts them into vector embeddings, and stores
-                        them in Qdrant for efficient similarity search. Deployed as a containerized service behind a GCP
-                        authentication proxy, it provides secure, semantic access to enterprise business data.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">MCP</span>
-                        <span class="tech-tag">RAG</span>
-                        <span class="tech-tag">Vector Search</span>
-                        <span class="tech-tag">Qdrant</span>
-                        <span class="tech-tag">Azure OpenAI</span>
-                        <span class="tech-tag">FastAPI</span>
-                        <span class="tech-tag">Google Cloud</span>
-                    </div>
-                </div>
-
+            <!-- Project cards are rendered from data/projects/*.js (see that folder's README). -->
+            <div class="projects-grid" id="projects-grid">
                 <div class="project-card project-card-more">
                     <div class="project-category">And more…</div>
                     <h3>Other Projects</h3>
@@ -496,7 +76,6 @@
                         Some of this work is under NDA or otherwise not publicly listed. Happy to discuss
                         relevant projects on request.</p>
                 </div>
-
             </div>
         </section>
     </main>
@@ -542,10 +121,142 @@
             // Add click handler
             themeToggle.addEventListener('click', toggleTheme);
         })();
+    </script>
 
-        // Image lightbox functionality
+    <script type="module">
+        import { projects } from './data/projects/index.js';
+
+        // Single source of truth for taxonomy display: chip order + human labels.
+        // The category line and the filter chips are both built from these.
+        const ORDER = {
+            field: ['biomed-dl', 'llm-agentic', 'data-science', 'space-systems'],
+            type: ['research', 'commercial', 'personal'],
+            status: ['mature', 'prototype'],
+        };
+        const LABELS = {
+            field: {
+                'biomed-dl': 'Biomedicine & Deep Learning', 'llm-agentic': 'LLMs & Agentic AI',
+                'data-science': 'Data Science & Engineering', 'space-systems': 'Space Systems',
+            },
+            type: {
+                'research': 'Research', 'commercial': 'Commercial', 'personal': 'Personal',
+            },
+            status: { 'mature': 'Mature', 'prototype': 'Prototype' },
+        };
+
+        const LINK_SVG = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>';
+
+        // ----- render cards from data -----
+        function categoryLine(p) {
+            const parts = [LABELS.field[p.field]];
+            ORDER.type.forEach(t => { if (p.type.includes(t)) parts.push(LABELS.type[t]); });
+            if (p.status) parts.push(LABELS.status[p.status]);
+            return parts.join(' • ');
+        }
+
+        function cardHTML(p) {
+            const dataStatus = p.status ? ` data-status="${p.status}"` : '';
+            const img = p.image ? `<img src="${p.image.src}" alt="${p.image.alt}" class="project-image">` : '';
+            const tags = p.tags.map(t => `<span class="tech-tag">${t}</span>`).join('');
+            const links = (p.links && p.links.length)
+                ? `<div class="project-links">${p.links.map(l =>
+                    `<a href="${l.url}" target="_blank" rel="noopener noreferrer" class="project-link">${l.label}${LINK_SVG}</a>`
+                ).join('')}</div>`
+                : '';
+            return `<div class="project-card" data-field="${p.field}" data-type="${p.type.join(' ')}"${dataStatus}>
+                <div class="project-category">${categoryLine(p)}</div>
+                <h3>${p.title}</h3>
+                ${img}
+                <p>${p.description}</p>
+                <div class="project-tech">${tags}</div>
+                ${links}
+            </div>`;
+        }
+
+        const grid = document.getElementById('projects-grid');
+        const moreCard = grid.querySelector('.project-card-more');
+        projects.forEach(p => moreCard.insertAdjacentHTML('beforebegin', cardHTML(p)));
+
+        // ----- filter bar (Field / Type / Status) -----
         (function () {
-            // Create lightbox elements
+            const filterBar = document.getElementById('project-filters');
+            const cards = Array.from(grid.querySelectorAll('.project-card'))
+                .filter(card => !card.classList.contains('project-card-more'));
+
+            const active = { field: new Set(), type: new Set(), status: new Set() };
+
+            function cardValues(card, dim) {
+                const raw = (card.dataset[dim] || '').trim();
+                return raw ? raw.split(/\s+/) : [];
+            }
+
+            ['field', 'type', 'status'].forEach(dim => {
+                const groupEl = filterBar.querySelector('.filter-group[data-dimension="' + dim + '"]');
+                const chipsEl = groupEl.querySelector('.filter-chips');
+                const present = new Set();
+                cards.forEach(card => cardValues(card, dim).forEach(v => present.add(v)));
+
+                ORDER[dim].forEach(value => {
+                    if (!present.has(value)) return;
+                    const chip = document.createElement('button');
+                    chip.type = 'button';
+                    chip.className = 'filter-chip';
+                    chip.textContent = LABELS[dim][value];
+                    chip.setAttribute('aria-pressed', 'false');
+                    chip.addEventListener('click', () => {
+                        if (active[dim].has(value)) {
+                            active[dim].delete(value);
+                            chip.classList.remove('active');
+                            chip.setAttribute('aria-pressed', 'false');
+                        } else {
+                            active[dim].add(value);
+                            chip.classList.add('active');
+                            chip.setAttribute('aria-pressed', 'true');
+                        }
+                        applyFilters();
+                    });
+                    chipsEl.appendChild(chip);
+                });
+
+                if (chipsEl.children.length === 0) groupEl.style.display = 'none';
+            });
+
+            const countEl = document.getElementById('filter-count');
+            const clearBtn = document.getElementById('filter-clear');
+
+            function passesDim(card, dim) {
+                if (active[dim].size === 0) return true;
+                return cardValues(card, dim).some(v => active[dim].has(v));
+            }
+
+            function applyFilters() {
+                let visible = 0;
+                cards.forEach(card => {
+                    const show = passesDim(card, 'field') && passesDim(card, 'type') && passesDim(card, 'status');
+                    card.style.display = show ? '' : 'none';
+                    if (show) visible++;
+                });
+                const anyActive = active.field.size || active.type.size || active.status.size;
+                countEl.textContent = anyActive
+                    ? 'Showing ' + visible + ' of ' + cards.length
+                    : cards.length + ' projects';
+                clearBtn.style.display = anyActive ? '' : 'none';
+            }
+
+            clearBtn.addEventListener('click', () => {
+                ['field', 'type', 'status'].forEach(dim => active[dim].clear());
+                filterBar.querySelectorAll('.filter-chip.active').forEach(chip => {
+                    chip.classList.remove('active');
+                    chip.setAttribute('aria-pressed', 'false');
+                });
+                applyFilters();
+            });
+
+            applyFilters();
+        })();
+
+        // ----- image lightbox (event-delegated, works for rendered cards) -----
+        (function () {
             const lightbox = document.createElement('div');
             lightbox.className = 'lightbox';
             lightbox.innerHTML = `
@@ -558,42 +269,32 @@
             document.body.appendChild(lightbox);
 
             const lightboxImage = lightbox.querySelector('.lightbox-image');
-            const lightboxOverlay = lightbox.querySelector('.lightbox-overlay');
-            const lightboxClose = lightbox.querySelector('.lightbox-close');
 
-            // Function to open lightbox
             function openLightbox(src, alt) {
                 lightboxImage.src = src;
                 lightboxImage.alt = alt;
                 lightbox.classList.add('active');
-                document.body.style.overflow = 'hidden'; // Prevent background scrolling
+                document.body.style.overflow = 'hidden';
             }
 
-            // Function to close lightbox
             function closeLightbox() {
                 lightbox.classList.remove('active');
-                document.body.style.overflow = ''; // Restore scrolling
+                document.body.style.overflow = '';
             }
 
-            // Add click handlers to project images
-            document.querySelectorAll('.project-image').forEach(img => {
-                img.style.cursor = 'pointer';
-                img.addEventListener('click', function () {
-                    openLightbox(this.src, this.alt);
-                });
+            grid.addEventListener('click', (e) => {
+                const img = e.target.closest('.project-image');
+                if (img) openLightbox(img.src, img.alt);
             });
 
-            // Close lightbox when clicking overlay or close button
-            lightboxOverlay.addEventListener('click', closeLightbox);
-            lightboxClose.addEventListener('click', closeLightbox);
-
-            // Close lightbox with ESC key
-            document.addEventListener('keydown', function (e) {
-                if (e.key === 'Escape' && lightbox.classList.contains('active')) {
-                    closeLightbox();
-                }
+            lightbox.querySelector('.lightbox-overlay').addEventListener('click', closeLightbox);
+            lightbox.querySelector('.lightbox-close').addEventListener('click', closeLightbox);
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && lightbox.classList.contains('active')) closeLightbox();
             });
         })();
+
+        lucide.createIcons();
     </script>
 </body>
 
