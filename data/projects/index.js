@@ -2,7 +2,6 @@
 // To reorder, just move entries around. To add a project, create a sibling
 // file (e.g. ./my-project.js), import it here, and add it to the array.
 //
-// Currently ordered by overall impact / coolness (not by maturity).
 
 import pcai from './pcai.js';
 import adhere from './adhere.js';
